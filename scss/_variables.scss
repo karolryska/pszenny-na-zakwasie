@@ -1,0 +1,23 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+$serifText: 'Lora',
+serif;
+$sanserifText: 'Lato',
+sans-serif;
+
+
+// COLORS
+$creame: rgba(218, 223, 165, 1);
+
+
+@mixin text {
+    margin: 0;
+    font-family: $sanserifText;
+    // font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 36px;
+}

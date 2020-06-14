@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box; }
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo {
+  box-sizing: content-box;
+  height: 80px;
+  width: 200px;
+  margin: 20px 0 20px;
+  background-color: #dadfa5; }
+
+.navigation {
+  width: 50%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .navigation__link {
+    font-family: "Lora", serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    transition: .2s; }
+    .navigation__link:hover {
+      color: #dadfa5; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hero {
+  position: relative;
+  height: calc(100vh - 160px - 60px);
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: lightgray; }
+  .hero__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .hero__heading {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-family: "Lora", serif;
+    color: white;
+    font-size: 80px; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px; }
+  .section__title {
+    display: inline;
+    position: relative;
+    margin: 50px 0 50px;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: black; }
+    .section__title::before {
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      transform: translate(10%, 90%);
+      background-color: #dadfa5;
+      z-index: -1; }
+  .section__small-title {
+    margin: 0 0 14px;
+    font-family: "Lora", serif; }
+  .section__text {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px; }
+
+.tools {
+  min-height: 100vh;
+  padding-bottom: 60px; }
+  .tools__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: hidden; }
+  .tools__photo-container {
+    height: 100%;
+    width: 50%; }
+  .tools__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .tools__text {
+    width: 50%;
+    margin-left: 30px; }
+
+.recipe__list {
+  text-align: right;
+  margin-right: 40px; }
+
+.recipe__photo {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  object-fit: cover; }
+
+.recipe__steps {
+  width: 800px;
+  display: flex;
+  flex-direction: column; }
+
+.recipe__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center; }
+
+.ingredients {
+  width: 100%;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 20px; }
+  .ingredients__container {
+    text-align: right;
+    margin-right: 40px; }
+  .ingredients__small-title {
+    margin-bottom: 0; }
+  .ingredients__list {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    margin: 4px 0 16px; }
+  .ingredients__item {
+    display: list-item;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px; }
+
+.faq__container {
+  width: 100%;
+  display: block;
+  column-count: 2;
+  row-gap: 30px; }
+
+.faq__article {
+  width: 100%;
+  margin-bottom: 30px; }
+
+.contact {
+  width: 80%;
+  margin: 0 auto; }
+  .contact__container {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 40% 60%; }
+    .contact__container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .contact__form {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .contact__wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px; }
+    .contact__wrapper label {
+      margin-bottom: 10px; }
+    .contact__wrapper input {
+      height: 26px;
+      border: 1px solid black;
+      border-radius: 2px; }
+    .contact__wrapper input::placeholder {
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding-left: 2px; }
+    .contact__wrapper--message textarea {
+      border: 1px solid black;
+      resize: none;
+      height: 160px; }
+  .contact__button {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding: 0;
+    position: relative; }
+    .contact__button:hover::before {
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      transform: translate(10%, 90%);
+      background-color: #dadfa5;
+      z-index: -1; }

@@ -1,0 +1,21 @@
+{
+  "name": "chlebek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "concurrently \"npx node-sass -w scss/style.scss css/style.css\" \"npx live-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
