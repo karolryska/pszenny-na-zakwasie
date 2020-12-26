@@ -15,7 +15,7 @@
   box-sizing: content-box;
   height: 80px;
   width: 200px;
-  margin: 20px 0 20px;
+  margin: 30px 0 20px;
   background-color: #dadfa5; }
 
 .navigation {
@@ -44,9 +44,9 @@
 
 .hero {
   position: relative;
-  height: calc(100vh - 160px - 60px);
+  height: calc(100vh - 177px - 60px);
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   background-color: lightgray; }
   .hero__photo {
     height: 100%;
