@@ -8,13 +8,14 @@
     <title>Pszenny na zakwasie</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
 </head>
 
 <body>
     <header class="header">
-        <div class="logo"></div>
-        <nav class="navigation">
+        <div data-aos="fade-up" data-aos-once="true" class="logo"></div>
+        <nav data-aos="fade-up" data-aos-once="true" class="navigation">
             <a href="#tools" class="navigation__link ">narzędzia</a>
             <a href="#recipe" class="navigation__link">przepis</a>
             <a href="#faq" class="navigation__link">faq</a>
@@ -67,7 +68,7 @@
         </section>
         <section class="recipe" id="recipe">
             <h2 class="recipe__title">przepis</h2>
-            <article class="recipe__ingredients ingredients">
+            <article data-aos="fade-up" data-aos-once="true" class="recipe__ingredients ingredients">
                 <div class="ingredients__wrapper">
                     <h3 class="ingredients__title">składniki:</h3>
                     <ul class="ingredients__list">
@@ -85,7 +86,7 @@
                 <img class="ingredients__photo" src="assets/photo_ingredients.jpg"
                     alt="składniki potrzebne do wypieku chleba">
             </article>
-            <div class="recipe__steps steps">
+            <div data-aos="fade-up" data-aos-once="true" class="recipe__steps steps">
                 <article class="steps__wrapper">
                     <h3 class="steps__name">autoliza</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet
@@ -97,7 +98,7 @@
                         fugiat
                         labore, sit et cum? Sequi.</p>
                 </article>
-                <article class="steps__wrapper">
+                <article data-aos="fade-up" data-aos-once="true" class="steps__wrapper">
                     <h3 class="steps__name">wyrabianie</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quaerat
                         dignissimos dolorum
@@ -114,7 +115,7 @@
                         fugiat
                         labore, sit et cum? Sequi.</p>
                 </article>
-                <article class="steps__wrapper">
+                <article data-aos="fade-up" data-aos-once="true" class="steps__wrapper">
                     <h3 class="steps__name">fermentacja wstępna</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quaerat
                         dignissimos dolorum
@@ -123,7 +124,7 @@
                         fugiat
                         labore, sit et cum? Sequi.</p>
                 </article>
-                <article class="steps__wrapper">
+                <article data-aos="fade-up" data-aos-once="true" class="steps__wrapper">
                     <h3 class="steps__name">formowanie</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quaerat
                         dignissimos dolorum
@@ -132,7 +133,7 @@
                         fugiat
                         labore, sit et cum? Sequi.</p>
                 </article>
-                <article class="steps__wrapper">
+                <article data-aos="fade-up" data-aos-once="true" class="steps__wrapper">
                     <h3 class="steps__name">wyrastanie</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quaerat
                         dignissimos dolorum
@@ -149,7 +150,7 @@
                         fugiat
                         labore, sit et cum? Sequi.</p>
                 </article>
-                <article class="steps__wrapper">
+                <article data-aos="fade-up" data-aos-once="true" class="steps__wrapper">
                     <h3 class="steps__name">pieczenie</h3>
                     <p class="steps__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quaerat
                         dignissimos dolorum
@@ -229,8 +230,8 @@
         </section>
         <section class="contact" id="contact">
             <h2 class="contact__title">kontakt</h2>
-            <div class="contact__wrapper"><img class="contact__photo" src="assets/photo_contact.jpg" alt="">
-                <form class="contact__form form">
+            <div class="contact__wrapper"><img data-aos="fade-up" data-aos-once="true" class="contact__photo" src="assets/photo_contact.jpg" alt="">
+                <form data-aos="fade-up" data-aos-once="true" class="contact__form form">
                     <p class="form__input-wrapper">
                         <input class="form__input form__input--name" id="name" aria-label="imię" name="name" type="text"
                             placeholder="imię">
@@ -249,6 +250,10 @@
         </section>
     </main>
     <footer class="footer">Design and code by XXX.</footer>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
